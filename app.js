@@ -60,12 +60,13 @@ const getProducts = (products) => {
 
 const fetchProducts = () => {
   return async (dispatch) => {
-    const res = await fetch(baseURL + "Product/GetAlld");
-    console.log(res);
+    const res = await fetch(baseURL + "Product/GetAll");
+    console.log("sfsdfsdfsdfds",res);
     if (res.ok == true) {
       const data = await res.json();
       dispatch(getProducts(data));
     }else{
+      alert("Sdfsd")
       dispatch(deposite(0))
       document.querySelector("#productsTable").innerHTML = "can't reach the api products you can add by yourself";
     }

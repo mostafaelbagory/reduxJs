@@ -6,16 +6,20 @@
   <link rel="stylesheet" href="lib/style.css" />
 
   <body>
-
     <div class="container">
-      <h1>Transaction Form</h1>
-      <form>
-        <input type="text" id="amount" placeholder="Amount">
-        <button type="button" id="withdrow">Withdraw</button>
-        <button type="button" id="deposite">Deposit</button>
-      </form>
-      <div class="text-center">Balance : <span id="crntAmount"></span></div>
-      <hr/>
+      <header>
+        <h1>Redux Js</h1>
+      </header>
+      <section>
+        <h1>Transaction Form</h1>
+        <form>
+          <input type="number" id="amount" class="w-30" placeholder="Amount" />
+          <button type="button" id="withdrow">Withdraw</button>
+          <button type="button" id="deposite">Deposit</button>
+        </form>
+        <div class="text-center">Balance : <span id="crntAmount"></span></div>
+        <hr />
+      </section>
     </div>
 
     <div class="container">
@@ -24,9 +28,14 @@
 
         <h1>Product Form</h1>
         <form>
-          <input type="text" class=" w-30" id="Title" placeholder="title" />
-          <input type="text" class=" w-30" id="Price" placeholder="title" />
-          <input type="text" class=" w-30" id="Description" placeholder="title" />
+          <input type="text" class="w-30" id="Title" placeholder="title" />
+          <input type="number" class="w-30" id="Price" placeholder="Price" />
+          <input
+            type="text"
+            class="w-30"
+            id="Description"
+            placeholder="Description"
+          />
           <button type="button" id="addProduct">Add Product</button>
         </form>
 

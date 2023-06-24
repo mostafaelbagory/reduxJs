@@ -22,7 +22,8 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
- margin-top: 10px;
+ margin: 10px auto;
+ width: 30%;
 }
 
 button:hover {
@@ -74,9 +75,10 @@ header {
   padding: 20px;
 }
 
-.products {
+section {
   background-color: #ddd;
   padding: 20px;
+  margin-top: 10px;
 }
 
 table {
