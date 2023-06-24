@@ -66,8 +66,8 @@ const fetchProducts = () => {
       const data = await res.json();
       dispatch(getProducts(data));
     }else{
+      dispatch(deposite(0))
       document.querySelector("#productsTable").innerHTML = "can't reach the api products you can add by yourself";
-      dispatch({})
     }
   };
 };
